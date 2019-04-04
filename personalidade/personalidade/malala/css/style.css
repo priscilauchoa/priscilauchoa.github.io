@@ -316,6 +316,12 @@ header {
 .perfil__priscila__foto {
     width: 200px;
 }
+
+@media(max-width: 768px){
+    .perfil__priscila__foto {
+        margin: 0 auto;
+    }
+}
 span{
     font-weight: bold;
 }
