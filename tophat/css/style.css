@@ -3,12 +3,14 @@ body{
     font-family: 'Open-sans', sans-serif;
 }
 .menu {
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-around; */
     box-shadow: 1px 1px 4px -1px rgba(128, 128, 128, 0.411);
-    
+    width: 100%;
 }
+
+
 
 .menu__lista {
     display: flex;

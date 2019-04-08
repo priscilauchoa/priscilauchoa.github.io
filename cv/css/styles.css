@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(89, 2, 129);
+}
+/* CABEÇALHO */
+header {
+    background: linear-gradient(rgba(103, 69, 130, 0.56), rgba(103, 69, 130, 0.56)), url("../img/banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 380px;
+    color: white;
+}
+
+p {
+    margin: 0;
+}
+
+/* CONTAINER PADRÃO */
+.container {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.cabecalho__foto {
+    border-radius: 50%;
+    width: 25vh;
+}
+
+.cabecalho {
+    padding-top: 3.5%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.cabecalho__perfil {
+    line-height: 0.3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cabecalho__icones {
+    display: flex;
+}
+
+.social {
+    width: 5vh;
+    margin: 10px;
+}
+
+
+.social:hover {
+width: 40px;
+
+}
+
+
+/* MAIN */
+main {
+    margin-top: 20px;
+}
+
+.introducao {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.introducao h3{
+    margin-top: 0;
+}
+
+.introducao__sobre p {
+    width: 100%;
+    text-align: justify;
+    margin: 0;
+    line-height: 3vw;
+    
+}
+
+.introducao__sobre{
+    width: 40%; 
+   
+}
+
+.introducao__social{
+    width: 2vw;
+    padding-right: 1vw;
+
+}
+
+.introducao__basica {
+    line-height: 3vw;
+}
+/* LINHA */
+.linha {
+    
+    background-color: rgba(184, 57, 216, 0.637);
+    height: 1px;
+    display: flex;
+   
+}
+
+.linha--menor {
+    width:100%;
+    margin: 10px 0px;
+    /* background-image: linear-gradient(rgba(183, 0, 255, 0.5), rgba(186, 85, 211, 0.5)); */
+    background-color: rgba(186, 85, 211, 0.315);
+}
+/* SKILLS */
+.skills{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    line-height: 3vw;
+}
+
+ul {
+    padding: 10px;
+}
+
+.skills h3 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.skills__alinhamento{
+    margin-left: 2vw;
+}
+
+.skills__icone {
+   margin: 0;
+}
+
+/* EXPERIÊNCIA */
+.experiencia {
+    display: flex;
+    justify-content: initial;
+}
+
+.experiencia__linha{
+    width: 60%;
+}
+
+.experiencia__logo--ajustar {
+    margin: 32px 0 0 187px;
+    width: 45%;
+}
+
+experiencia__logo {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  
+}
+/* RODAPE */
+.rodape {
+    height: 6vw;
+    background-color: rgb(221, 176, 221);
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.rodape__icones { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+span {
+    margin: 20px 0;
+}
