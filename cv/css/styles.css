@@ -51,12 +51,13 @@ p {
 .social {
     width: 5vh;
     margin: 10px;
+    transition: 0.2s ease transform;
+    cursor: pointer;
 }
 
 
 .social:hover {
-width: 40px;
-
+    transform: scale(1.2);
 }
 
 
