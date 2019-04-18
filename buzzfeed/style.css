@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+    font-family: 'Comfortaa', cursive;
+    
+}
+
+img{
+    margin-top: 300px;
+}
+
+button{
+   
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 30px 30px;
+    width: 80px;
+    height: 40px;
+    background-color: rgb(240, 95, 95);
+    color: rgb(245, 241, 32);
+}
+
+.container{
+    background-color: rgb(247, 229, 229);
+    background-position: top;
+    background-image: url("./castelo.png");
+    background-repeat: no-repeat;
+    font-size: 20px;
+    text-align: center;
+    width: 600px;
+    margin: 20px auto;
+   
+}
+
+.container-2{
+    background-position: top;
+    font-size: 20px;
+    text-align: center;
+    width: 600px;
+    margin: 0 auto;
+   
+}
+
+.gif{
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+p{
+    
+    margin-top: 10px;
+    text-align: center;
+    color: rgb(241, 102, 102);
+    font-weight: bold;
+    font-size: 30px;
+}
+
+label{
+    font-size: 25px;
+}
