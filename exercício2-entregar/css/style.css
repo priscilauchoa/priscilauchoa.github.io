@@ -1,0 +1,279 @@
+/* Mudaças Priscila Desktop */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+header, .sobreMim{
+    background-color: black;
+    height: 500px;
+}
+ul {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    height: 10vh;
+}
+
+ul > li {
+    list-style: none;
+    margin: 20px 60px;
+    
+}
+
+body{
+    color: grey;
+}
+
+.banner{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 200px;
+    font-size: 1.5rem;
+}
+.banner_title-color{
+    color: #5BCBB2;
+}
+.seta{
+    padding: 50px;
+}
+.seta_img{
+    width: 2%;
+}
+
+.projetos{
+    height: 100%;
+    margin-bottom: 40px;
+}
+
+.projetos_title,  .titles{
+    color: #B3B2B2;
+    text-align: center;
+    padding: 50px;
+}
+.projetos_site{
+    display: flex;
+}
+.sobreMim_description{
+margin: 0 auto;
+    width: 400px;
+    text-align: center;
+    font-weight: lighter;
+    margin-top: 20px;
+}
+
+
+.site_img{
+    width:90%;
+}
+.site_title{
+    color: #B3B2B2;
+    width: 90%;
+    margin-top: 20px;
+}
+
+.site_title{
+    width: 100%;
+    color: black;
+    font-size: 16pt;
+    font-weight: lighter;
+}
+
+.btn{
+    padding: 20px;
+    text-align: center;
+}
+.btn_link{
+    font-weight: bold;
+    text-align: center;
+    background: #00B7A0;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;   
+}
+
+.btn_link-botao2{
+    padding: 5px 25px;
+    width: 264px;
+    height: 49px;
+    text-decoration: none;
+    color: #5BCBB2;
+    border: 2px solid #5BCBB2;
+    box-sizing: border-box;
+    margin-top: 20px;
+    }
+.sobreMim{
+    background-color: black;
+    text-align: center;
+}
+.sobreMim_img{
+    background-color: #ddd;
+    border-radius: 100%;
+    height: 157px;
+    object-fit: cover;
+    width: 157px;
+}
+
+.contato{
+    height: 50vh;
+}
+.contato_icons{
+    display: flex;
+    height: 10vh;
+    justify-content: space-around;
+}
+.contato_img{
+    width: 10%;    
+}
+.contato_img-icon{
+    width: 100%;
+}
+
+footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+h5{
+    font-weight: normal;
+}
+
+
+/* ---------------------------------------------- */
+/* Mobile-Priscila FLores {reprograma} - Semana 01*/
+@media (max-width: 840px) and (min-width: 360px) {
+      
+    ul {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+        height: 10vh;
+        font-size: 10px;
+        line-height: 12px;
+        }
+
+    ul > li{
+        margin: 3px 7px;
+    }
+    .banner{
+        width: 65%;
+        height: 100%;
+        margin: 0 auto;
+    }
+    h4{
+        font-weight: lighter;
+    }
+    /*  Borda branca no texto */
+    .banner_title-color{
+        -webkit-text-stroke-width: 1px; /* largura da borda */
+        -webkit-text-stroke-color:white;
+    }
+    .banner_title{
+        width: 160px;
+        height: 153px;
+        text-align: left;
+        margin-top: 120px;
+        font-size: 40px;
+        padding-left: 31px;
+    }
+    .span{
+        width: 20px;
+        height: 20px;;
+        background-color: black;
+    }
+    h4{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: lighter;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+    }
+
+    .projetos_title{
+        padding: 30px 0;
+    }
+    .projetos_site{
+        display: block;
+    }
+    
+    .site_img{
+        width: 100%;
+    }
+
+    .seta {
+        padding: 7px 40px 56px 60px;
+    }
+    .seta_img{
+        padding-bottom: 20px;
+        width: 40px;
+    }
+
+    .sobreMim{
+        height: 595px;
+    }
+    .sobreMim_img {
+        background-color: #ddd;
+        border-radius: 100%;
+        height: 157px;
+        object-fit: cover;
+        width: 157px;
+        margin-bottom: 47px;
+    }
+
+
+    .titles{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        color: #48CFAD;
+        margin-bottom: 20px; 
+     }
+
+    .btn2{
+        padding: 20px 0 120px 0;
+    }
+.sobreMim_description{
+        width: 250px;
+    }
+    .contato_title{
+        font-family: Roboto;
+        font-size: 30px;
+        line-height: 35px;
+        color: #B3B2B2;
+        width: 100%;
+        margin: 30px 0;
+        padding: 0%;
+    }
+
+    .contato_icons {
+        display: block;
+        width: 28%;
+        margin: 0 auto;
+        height: 29%;
+    }
+
+    h5{
+        font-size: 10px;
+    }
+    footer{
+        margin-top: 30px;
+    }
+}
