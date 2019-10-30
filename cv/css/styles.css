@@ -10,7 +10,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 380px;
+    height: 450px;
     color: white;
 }
 
@@ -20,8 +20,7 @@ p {
 
 /* CONTAINER PADRÃO */
 .container {
-    width: 100%;
-    max-width: 850px;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -38,7 +37,6 @@ p {
 }
 
 .cabecalho__perfil {
-    line-height: 0.3;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -69,7 +67,7 @@ main {
 .introducao {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 60px;
     margin-bottom: 20px;
 }
 
@@ -81,7 +79,7 @@ main {
     width: 100%;
     text-align: left;
     margin: 0;
-    line-height: 2vw;
+    
     
 }
 
@@ -96,9 +94,6 @@ main {
 
 }
 
-.introducao__basica {
-    line-height: 3vw;
-}
 /* LINHA */
 .linha {
     
@@ -119,7 +114,7 @@ main {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-    line-height: 3vw;
+  
 }
 
 ul {
@@ -133,6 +128,7 @@ ul {
 }
 .skills__alinhamento{
     margin-left: 2vw;
+    width: 50%;
 }
 
 .skills__icone {
@@ -154,7 +150,7 @@ ul {
     width: 45%;
 }
 
-experiencia__logo {
+.experiencia__logo {
     display: flex;
     align-content: center;
     justify-content: center;
@@ -168,13 +164,42 @@ experiencia__logo {
     align-items: center;
     margin-top: 20px;
 }
-
+.educacao{
+   width: 50%;
+}
+ 
 .rodape__icones { 
     display: flex;
     flex-direction: row;
     justify-content: center;
+    
 }
 
 span {
     margin: 20px 0;
+}
+@media (max-width: 768px) {
+    .introducao{
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .rodape{
+        height: 10vh;
+    }
+    .rodape__icones { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    }
+    .experiencia__logo--ajustar {
+        display: none;
+    }
+    .introducao__sobre{
+        width: 100%;
+    }    
+    .introducao__sobre p {    
+        text-align: center;
+        
+    }
 }
