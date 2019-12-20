@@ -1,0 +1,589 @@
+/* --- MOBILE FIRST - iPhone 7 - width < 768px --- */
+/*
+unidades preferidas para esse CSS
+margin, padding: rem
+font-size: rem
+width: %
+max-width: % ou px
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px; /* definir uma font-size padrão */
+}
+
+body {
+    font-family: 'Roboto Slab', 'Trebuchet MS', Arial, sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    font-size: 2rem;
+}
+p {
+    width: 100vw;
+    text-align: center;
+}
+
+.img-responsive {
+    width: 100%;
+ }
+
+/* define o tamanho da caixa */
+.container {
+    margin: 0 auto;
+    width: 90%;
+    /* max-width: 500px; */
+}
+
+/* --- BOTAO --- */
+.btn {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    font-size: 1.8rem;
+}
+
+.btn_roxo {
+    color: white;
+    background-color: #C083B9;
+    display: block;
+    max-width: 250px;
+    text-align: center;
+    transition: all .5s;
+    margin: 0 auto;
+}
+
+.btn_roxo:hover {
+    transform: translateY(-1rem);
+    box-shadow: 0 10px 10px rgba(0,0,0,.2);
+    background-color: rgb(192, 156, 188);
+}
+
+.btn_center {
+    margin: 0 auto;
+}
+
+/* --- NAV --- */
+.navegacao {
+    background-color: #f37b5d6b;
+    color: white;
+    text-transform: uppercase;
+    box-shadow: 0px 5px 5px rgba(0,0,0,.2);
+    padding: 1.5rem;
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+    transition: all 1s;
+}
+
+.navegacao__logo {
+    max-width: 200px;
+}
+
+.navegacao__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navegacao__itens {
+    transition: all 1s;
+    position: absolute;
+    right: -800px;
+    top: 89px;
+    width: 100%;
+    text-align: center;
+    padding: 3rem 0;
+}
+ 
+.navegacao__itens.ativo {
+    display: block;
+    right: 0;
+    top: 89px;
+    width: 100%;
+    text-align: center;
+    padding: 3rem 0;
+    transition: right .5s;
+    background-color: #8263456b;
+    background-blend-mode: multiply;
+}
+
+.navegacao__itens li > a {
+    transition: all .5s;
+} 
+
+.navegacao__menu-hamburguer img {
+    border-radius: 5px;
+}
+
+.navegacao__nav {
+    margin-bottom: 3rem;
+    margin-right: 2rem;
+}
+
+.navegacao__nav li {
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.navegacao__redes-sociais {
+    padding-top: 1px;
+}
+
+.navegacao__redes-sociais a {
+    margin: 0 1rem;
+}
+
+.navegacao__redes-sociais img {
+    width: 24px;
+}
+
+.video {
+    width: 30px;
+    height: 30px;
+
+}
+
+/* --- HEADER --- */
+.header {
+    height: 400px;
+    background: 
+        linear-gradient(to top,rgba(236, 137, 106, 0.39) 0,
+        rgba(213, 129, 442, 0.418) 50%,
+        rgba(29, 27, 27, 0.281)  100%),
+        url(./img/maria.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    text-align: left;
+    color: white;
+}
+
+.principal__titulo {
+    text-transform: uppercase;
+    font-size: 2.7rem;
+    width: 95%;
+    text-align: end;
+    padding: 0%;
+}
+
+/* --- SECTION MARAVILHOSAS --- */
+
+.maravilhosas{
+    display: block;
+    padding-top: 10px;
+}
+
+.maravilhosas__titulo {
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+    color: #fa4c07;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 0 24px 0 24px;
+    margin: 0%;
+    width: 60vw;
+}
+
+.maravilhosas__alinamento {
+   display: block;
+}
+
+
+.maravilhosas__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    color: #63458a;
+}
+
+.maravilhosas__perfil {
+    max-width: 120px;
+    margin: 2rem;
+}
+
+.maravilhosas__perfil img {
+    background-color: #63458a;
+    border-radius: 10px;
+    object-fit: cover;
+    height: 30px;
+}
+
+.maravilhosas__perfil p {
+    font-size: 1.7rem;
+}
+
+.texto__alinhamento {
+    /* width:50%; */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: justify;
+    padding: 0;
+    margin: 0;
+}
+
+.maravilhosas__texto {
+   
+    text-align: justify;
+    font-size: 2rem;
+}
+
+.voluntariado {
+    background-color: #f37b5d21;
+    font-weight: bold;
+    border: 0.5px solid #f5bba418;
+    text-align: center;
+    margin: 20px 0;
+    padding: 5rem;
+    font-size: 1.7rem; 
+}
+
+.voluntariado:hover{
+    -webkit-transform: scale(1.03);
+    transition: 0.2s;
+}
+/* --- FOOTER --- */
+.rodape {
+    background-color: #323534;
+    color: white;
+    font-size: .9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: .8rem;
+}
+
+.rodape__principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.rodape__principal > * {
+    margin: 1rem 0;
+}
+
+.rodape__navegacao > li {
+    font-size: 1.4rem;
+    margin: 1rem;
+}
+
+.rodape__navegacao a {
+    transition: all .5s;
+}
+
+.rodape__logo {
+    max-width: 200px;
+}
+
+.rodape__redes-sociais a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s;
+    padding: 1.5rem 0;
+}
+
+.rodape__redes-sociais img {
+    max-width: 15px;
+    margin-right: .5rem;
+}
+
+.rodape__redes-sociais span {
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.rodape__cc {
+    width: 98%;
+    background-color: #292A2A;
+    font-size: 1rem;
+    opacity: 0.5;
+    text-align: center;
+    padding: 1rem;
+}
+
+.autora{
+    font-size: 2.2rem;
+    color: #fa4c07;
+    text-align: center;
+}
+
+.autora__imagem {
+    display: none;
+}
+
+.autora__icone {
+    margin: 4px;
+}
+
+.autora__redes-sociais {
+    display: none;
+
+}
+/* 
+.autora__redes-sociais {
+    width: 100vw;
+    text-align: center;
+    align-items: center;
+} */
+
+.card__title {
+    border: 1px solid rgba(201, 84, 16, 0.068);
+    background-color: #f37b5d1c;
+    border-radius: 2px;
+}
+
+.card__h5 {
+    padding: 0 6px 0 6px; 
+    font-size: 1.5rem;
+}
+
+.card__p{
+    padding: 6px;
+    text-align: justify;
+}
+
+
+.texto__autora{ 
+    width: 80vw;
+}
+    
+iframe  {
+    display: none;
+}
+
+/*** MEDIA QUERIES ***/
+/* TABLET */
+@media (min-width: 768px) {
+    /* --- NAV --- */
+    .navegacao__itens {
+        position: static;
+        display: flex;
+        padding: 0;
+        width: auto;
+    }
+    
+    .navegacao__itens ul {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .navegacao__itens li {
+        font-size: 1.2rem;
+        margin: 0 .6rem;
+    }
+    
+    .navegacao__menu-hamburguer {
+        display: none;
+    }
+
+    /* --- HEADER --- */
+    .header {
+        min-height: 75vh;
+        text-align: left;
+    }
+
+    .principal__titulo {
+        font-size: 2.9rem;
+    }
+    
+    .principal__sub {
+        font-size: 1.8rem;
+    }
+
+    .principal__btn {
+        margin: 0;
+    }
+
+
+    .texto__autora{ 
+        width: 70vw;
+    }
+
+
+.autora__imagem {
+    display: none;
+}
+        
+    iframe  {
+        display: none;
+    }
+
+
+    /* --- SECTION MARAVILHOSAS --- */
+    .maravilhosas {
+        display: block;
+        padding: 4rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        justify-items: center;
+        
+    }
+
+    .maravilhosas__texto {
+        /* width: 40vw; */
+        text-align: justify;
+        font-size: 2rem;
+}
+
+    .maravilhosas__box > div {
+        max-width: 200px;
+        margin: 5rem;
+    }
+
+    .maravilhosas__perfil img{
+        min-height: 220px;
+    }
+    .maravilhosas__perfil p {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    /* --- FOOTER --- */
+    .rodape {
+        padding-top: 0;
+    }
+
+    .rodape__principal {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    .rodape__logo img {
+        max-width: 250px;
+    }
+
+    .rodape__cc {
+        font-size: 1.2rem;
+    }
+}
+
+/* TABLET PAISAGEM OU LAPTOPS */
+@media (min-width: 1024px) {
+    .principal {
+        max-width: 650px;
+    }
+
+    .principal__titulo {
+        font-size: 3.5rem;
+    }
+    
+    .texto {
+        width: 60vw;
+        text-align: justify;
+    }
+
+    .autora__redes-sociais {
+        display: flex;
+        width: 30%;
+        justify-content: space-around;
+    }
+
+    .autora__imagem {
+        display: flex;
+        width: 250px;
+   }
+
+   #mulheres-maravilhosas > div {
+       width: 50%;
+   }
+
+    .texto__autora{ 
+        width: 40vw;
+    }
+
+    iframe  {
+        display: none;
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 1440px) {
+    .navegacao__box {
+        max-width: 80%;
+    }
+
+    .header {
+        min-height: 100vh;
+        padding: 0;
+    }
+
+    .navegacao__itens li {
+        font-size: 1.5rem;
+        margin: 0 1rem;
+    }
+
+    .principal {
+        max-width: 750px;
+    }
+
+    .principal__titulo {
+        font-size: 4rem;
+    }
+
+    .container{
+        max-width: 1200px;
+    }
+
+    .maravilhosas__alinamento { 
+        display: flex;
+        text-align: justify;
+        align-items: center;
+    }
+    
+    .autora__imagem {
+        width:430px;
+        border-radius: 3px;
+    }
+
+    #mulheres-maravilhosas {
+        padding-bottom: 0;
+    }
+    
+    .voluntariado {
+        margin: 60px;
+    }
+
+    #mulheres-maravilhosas > div > p {
+        padding: 0 20px;
+    }
+
+    p {
+        width: 30vw;
+        text-align: justify;
+    }
+        
+    iframe{
+        display: flex;
+        max-width: 100% !important;
+      } 
+}
